@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Companioni Dental Smile</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
+  </head>
+  <body>
+    <!-- Menú Flotante Superior -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/20 backdrop-blur-sm">
+      <nav
+        class="max-w-6xl mx-auto px6 pt-3 pb-1 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+          <img
+            src="./dist/assets/logo.png"
+            alt="Companioni Logo"
+            class="h-30 w-auto"
+          />
+        </a>
+
+        <!-- Menú -->
+        <ul
+          class="hidden md:flex items-center space-x-8 text-white font-medium"
+        >
+          <li><a href="#home" class="hover:text-teal-300">Home</a></li>
+          <li><a href="#about" class="hover:text-teal-300">About Us</a></li>
+          <li><a href="#services" class="hover:text-teal-300">Services</a></li>
+          <li><a href="#reviews" class="hover:text-teal-300">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-teal-300">Contact Us</a></li>
+        </ul>
+
+        <!-- Menú Móvil (Opcional: Si quieres hacerlo responsive) -->
+        <button class="md:hidden text-white">☰</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center hero-section"
+      style="background-image: url('./dist/assets/hero.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="relative z-10 text-center text-white px-6 py-60">
+        <h1 class="text-5xl font-bold mb-4">
+          A Better Life Starts with a Beautiful Smile
+        </h1>
+        <p class="mb-6">"Transforming Smiles, Enhancing Lives."</p>
+        <button
+          class="px-6 py-3 bg-[#129990] hover:bg-[#0f7c75] text-white font-semibold rounded transition duration-300"
+        >
+          Book An Appointment
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Welcome to Dental Clinic -->
+    <section class="py-24 px-6 bg-white">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <!-- Texto e iconos -->
+        <div>
+          <h2 class="text-5xl font-extrabold mb-8 text-neutral-900 font-serif">
+            Welcome to Dental Clinic
+          </h2>
+          <p class="text-lg text-neutral-700 mb-10 max-w-xl">
+            A descriptive paragraph that tells clients how good you are and
+            proves that you are the best choice that they’ve made. This
+            paragraph is also for those who are looking out for a reliable
+            dental clinic.
+          </p>
+          <div class="space-y-7 mb-8">
+            <div class="flex items-start gap-5">
+              <span
+                class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal-100"
+              >
+                <!-- Home SVG -->
+                <svg
+                  class="w-7 h-7 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 9.75l9-7.5 9 7.5M4.5 10.5V19a2 2 0 002 2h3.5v-4.5a1 1 0 011-1h2a1 1 0 011 1V21H17.5a2 2 0 002-2v-8.5"
+                  ></path>
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-xl font-bold text-neutral-900 mb-1">
+                  Friendly Clinic Near You
+                </h3>
+                <p class="text-neutral-600 text-base">
+                  This is a short description elaborating the service you have
+                  mentioned above.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5">
+              <span
+                class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-teal-100"
+              >
+                <!-- Doctor SVG -->
+                <svg
+                  class="w-7 h-7 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 12c2.25 0 4.5-.5 6-2-1.5-1.5-3.75-2-6-2s-4.5.5-6 2c1.5 1.5 3.75 2 6 2z"
+                  ></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-xl font-bold text-neutral-900 mb-1">
+                  Experienced Dentist
+                </h3>
+                <p class="text-neutral-600 text-base">
+                  This is a short description elaborating the service you have
+                  mentioned above.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="flex items-center gap-2 px-5 py-2 border-2 border-[#129990] text-[#129990] rounded-lg font-medium hover:bg-[#129990] hover:text-white transition-all"
+          >
+            <!-- Map Icon SVG -->
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 20l-5.447-2.724A2 2 0 013 15.382V7.618a2 2 0 01.553-1.382L9 4m6 16l5.447-2.724A2 2 0 0021 15.382V7.618a2 2 0 00-.553-1.382L15 4m-6 16V4m6 16V4"
+              ></path>
+            </svg>
+            View On Google Map
+          </button>
+        </div>
+        <!-- Imagen y decorativos -->
+        <div class="relative flex justify-center items-center">
+          <!-- Fondo de dots decorativo -->
+          <div class="absolute -top-10 -left-10">
+            <svg width="170" height="110" class="opacity-30">
+              <defs>
+                <pattern
+                  id="dots"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#129990" />
+                </pattern>
+              </defs>
+              <rect width="170" height="110" fill="url(#dots)" />
+            </svg>
+          </div>
+          <!-- Imagen cuadrada encima -->
+          <img
+            src="./dist/assets/dental-patient.jpg"
+            alt="Dental Patient"
+            class="rounded-xl w-72 h-72 object-cover z-10 shadow-xl"
+          />
+          <!-- Imagen circular con sombra debajo, desfasada a la izquierda -->
+          <img
+            src="./dist/assets/dental-equipment.jpg"
+            alt="Dental Equipment"
+            class="rounded-full w-44 h-44 object-cover shadow-2xl absolute left-0 -bottom-14 z-0 opacity-90"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: New Patient CTA -->
+    <section class="relative py-24 px-6 bg-[#129990]/90 overflow-hidden">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Columna izquierda -->
+        <div class="text-white pl-4">
+          <h2 class="text-4xl font-extrabold mb-6 font-serif">New Patient</h2>
+          <p class="text-lg mb-10 max-w-lg">
+            A descriptive paragraph that tells clients how good you are and
+            proves that you are the best choice that they’ve made. This
+            paragraph is also for those who are looking out for a reliable
+            dental clinic.
+          </p>
+          <div class="mt-8 mb-2 flex items-center gap-3">
+            <!-- Teléfono icono -->
+            <svg
+              class="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.88 19.88 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.88 19.88 0 012.08 4.18 2 2 0 014.06 2h3a2 2 0 012 1.72c.13 1.1.33 2.16.6 3.17a2 2 0 01-.45 2l-1.27 1.27a16 16 0 006 6l1.27-1.27a2 2 0 012-.45c1.01.27 2.07.47 3.17.6A2 2 0 0122 16.92z"
+              ></path>
+            </svg>
+            <span class="uppercase font-semibold tracking-widest text-base"
+              >Need Assistance?</span
+            >
+          </div>
+          <p class="text-2xl font-extrabold mb-2 mt-1">+(888) 695-9859</p>
+        </div>
+        <!-- Columna derecha: formulario -->
+        <div class="relative">
+          <div
+            class="bg-white p-8 rounded-lg shadow-2xl relative z-10 max-w-md w-full"
+          >
+            <form class="space-y-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full p-3 rounded border border-neutral-300 focus:ring-2 focus:ring-[#129990] outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 rounded border border-neutral-300 focus:ring-2 focus:ring-[#129990] outline-none"
+              />
+              <input
+                type="tel"
+                placeholder="Your Phone Number"
+                class="w-full p-3 rounded border border-neutral-300 focus:ring-2 focus:ring-[#129990] outline-none"
+              />
+              <button
+                class="w-full py-3 bg-[#129990] text-white font-semibold rounded hover:bg-[#0f7c75] transition"
+              >
+                Send Request
+              </button>
+            </form>
+          </div>
+          <!-- Fondo de dots decorativo a la derecha -->
+          <div class="absolute -right-16 bottom-4 z-0 opacity-25">
+            <svg width="150" height="120">
+              <defs>
+                <pattern
+                  id="dots2"
+                  x="0"
+                  y="0"
+                  width="18"
+                  height="18"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#0e5865" />
+                </pattern>
+              </defs>
+              <rect width="150" height="120" fill="url(#dots2)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- Fondo claro en el lado derecho -->
+      <div
+        class="hidden md:block absolute top-0 right-0 w-1/2 h-full bg-[#eaf5ef] z-0"
+      ></div>
+    </section>
+
+    <!-- SECCIÓN: Committed to Dental Excellence -->
+    <section class="py-24 px-6 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <!-- Imagen con dots decorativos -->
+        <div class="relative flex justify-center">
+          <!-- Fondo de dots -->
+          <div class="absolute -left-10 -top-12 z-0 opacity-25">
+            <svg width="170" height="150">
+              <defs>
+                <pattern
+                  id="dots3"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#129990" />
+                </pattern>
+              </defs>
+              <rect width="170" height="150" fill="url(#dots3)" />
+            </svg>
+          </div>
+          <!-- Imagen principal -->
+          <img
+            src="./dist/assets/dental-photo2.jpg"
+            alt="Dental Excellence"
+            class="rounded-full w-80 h-80 object-cover shadow-2xl border-8 border-white relative z-10"
+          />
+        </div>
+
+        <!-- Texto -->
+        <div>
+          <h2
+            class="text-5xl font-extrabold mb-6 text-neutral-900 font-serif leading-tight"
+          >
+            Committed to <span class="text-[#129990]">Dental Excellence</span>
+          </h2>
+          <h3 class="text-2xl font-semibold mb-3 text-[#129990]">
+            We Create Beautiful and Brighter Smiles
+          </h3>
+          <p class="text-neutral-700 mb-6 text-lg">
+            Our highly skilled professionals utilize advanced technology and
+            techniques to ensure optimal dental care and beautiful smiles.
+          </p>
+          <blockquote
+            class="text-neutral-600 italic border-l-4 border-[#129990] pl-4 mb-6"
+          >
+            “We treat our patients like family, ensuring comfort, quality, and
+            confidence in every smile.”
+          </blockquote>
+          <div class="flex items-center gap-3 mt-4">
+            <img
+              src="./dist/assets/doctor-avatar.jpg"
+              alt="Dr. Michael Martínez"
+              class="w-14 h-14 object-cover rounded-full border-2 border-[#129990] shadow"
+            />
+            <div>
+              <div class="font-bold text-neutral-800">Dr. Michael Martínez</div>
+              <div class="text-sm font-medium text-neutral-500">
+                Master of Dentistry
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Complete Care -->
+    <section class="py-24 px-6 bg-[#eaf5ef]">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-5xl font-extrabold mb-2 text-neutral-900 font-serif">
+          Complete Care on Your Schedule
+        </h2>
+        <p class="text-xl font-semibold mb-12 text-neutral-800">
+          Bringing Life to Your Smile
+        </p>
+        <div class="grid md:grid-cols-4 gap-8">
+          <!-- CARD 1 -->
+          <div
+            class="relative bg-white rounded-lg shadow p-8 flex flex-col items-center"
+          >
+            <div class="absolute -top-8">
+              <span
+                class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-[#129990]/10"
+              >
+                <!-- Doctor SVG -->
+                <svg
+                  class="w-10 h-10 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="5" y="3" width="14" height="18" rx="2" fill="none" />
+                  <circle cx="12" cy="10" r="3" />
+                  <path d="M12 13v4" stroke="currentColor" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-xl font-bold mb-2 text-neutral-900">
+                Experienced Dentist
+              </h3>
+              <p class="text-neutral-600 text-base">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div
+            class="relative bg-white rounded-lg shadow p-8 flex flex-col items-center"
+          >
+            <div class="absolute -top-8">
+              <span
+                class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-[#129990]/10"
+              >
+                <!-- Braces SVG -->
+                <svg
+                  class="w-10 h-10 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="4" y="9" width="16" height="6" rx="3" />
+                  <path d="M8 9V7a4 4 0 018 0v2" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-xl font-bold mb-2 text-neutral-900">
+                Advance Treatment
+              </h3>
+              <p class="text-neutral-600 text-base">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div
+            class="relative bg-white rounded-lg shadow p-8 flex flex-col items-center"
+          >
+            <div class="absolute -top-8">
+              <span
+                class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-[#129990]/10"
+              >
+                <!-- Handshake SVG -->
+                <svg
+                  class="w-10 h-10 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 8l4 4-4 4m-1.41-1.41L13 12.59m6.41 1.41L20 16.59l-4-4-4 4 1.41-1.41"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-xl font-bold mb-2 text-neutral-900">
+                Guaranteed Results
+              </h3>
+              <p class="text-neutral-600 text-base">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div
+            class="relative bg-white rounded-lg shadow p-8 flex flex-col items-center"
+          >
+            <div class="absolute -top-8">
+              <span
+                class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-[#129990]/10"
+              >
+                <!-- Hospital SVG -->
+                <svg
+                  class="w-10 h-10 text-[#129990]"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="6" y="3" width="12" height="18" rx="2" fill="none" />
+                  <path d="M9 10h6M12 7v6M8 21v-2m8 2v-2" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-xl font-bold mb-2 text-neutral-900">
+                Modern Equipment
+              </h3>
+              <p class="text-neutral-600 text-base">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Dentistry for Today’s Lifestyle -->
+    <section class="py-24 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <!-- Encabezado y decorativo -->
+        <div
+          class="flex flex-col md:flex-row items-start md:items-center mb-12 gap-8"
+        >
+          <div class="flex-1">
+            <h2
+              class="text-5xl font-extrabold text-neutral-900 font-serif mb-3"
+            >
+              Dentistry for Today’s<br />
+              Lifestyle
+            </h2>
+            <p class="text-xl font-semibold text-neutral-800 mt-2">
+              We Have All Your Dental Needs Covered
+            </p>
+          </div>
+          <!-- Dots decorativo -->
+          <div class="hidden md:block flex-shrink-0 ml-10">
+            <svg width="200" height="110" class="opacity-25">
+              <defs>
+                <pattern
+                  id="dots4"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#129990" />
+                </pattern>
+              </defs>
+              <rect width="200" height="110" fill="url(#dots4)" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Galería de servicios -->
+        <div
+          class="grid md:grid-cols-4 grid-cols-1 gap-0 rounded-lg overflow-hidden shadow-lg"
+        >
+          <!-- Card 1 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service1.jpg"
+              alt="Dental X-Rays"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                01.<br />
+                <span class="text-2xl font-extrabold">Dental X-Rays</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service2.jpg"
+              alt="Exams & Cleanings"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                02.<br />
+                <span class="text-2xl font-extrabold">Exams & Cleanings</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service3.jpg"
+              alt="Cosmetic Dentistry"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                03.<br />
+                <span class="text-2xl font-extrabold">Cosmetic Dentistry</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service4.jpg"
+              alt="Periodontal Disease"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                04.<br />
+                <span class="text-2xl font-extrabold">Periodontal Disease</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service5.jpg"
+              alt="Root Canals"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                05.<br />
+                <span class="text-2xl font-extrabold">Root Canals</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service6.jpg"
+              alt="Extractions"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                06.<br />
+                <span class="text-2xl font-extrabold">Extractions</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service7.jpg"
+              alt="Teeth Whitening"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                07.<br />
+                <span class="text-2xl font-extrabold">Teeth Whitening</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="relative group h-56 bg-gray-200">
+            <img
+              src="./dist/assets/service8.jpg"
+              alt="Braces & Implants"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-[#129990]/80 transition duration-300"
+            ></div>
+            <div class="absolute inset-0 p-6 flex flex-col justify-end">
+              <div class="text-lg font-bold text-white mb-1">
+                08.<br />
+                <span class="text-2xl font-extrabold">Braces & Implants</span>
+              </div>
+              <p class="text-white text-sm">
+                This is a short description elaborating the service you have
+                mentioned above.
+              </p>
+            </div>
+          </div>
+          <!-- Card 9: Insurance info especial (span 2 columnas) -->
+          <div
+            class="relative bg-[#129990] flex flex-col justify-center items-start p-8 col-span-1 md:col-span-2 min-h-[7.5rem]"
+          >
+            <div class="flex items-center gap-4 text-white">
+              <svg
+                class="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.88 19.88 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.88 19.88 0 012.08 4.18 2 2 0 014.06 2h3a2 2 0 012 1.72c.13 1.1.33 2.16.6 3.17a2 2 0 01-.45 2l-1.27 1.27a16 16 0 006 6l1.27-1.27a2 2 0 012-.45c1.01.27 2.07.47 3.17.6A2 2 0 0122 16.92z"
+                />
+              </svg>
+              <div>
+                <div class="uppercase font-semibold tracking-widest text-sm">
+                  For Insurance
+                </div>
+                <div class="text-2xl font-bold">(007) 567-8976</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Banner Cupón Promocional-->
+    <section
+      class="relative h-[320px] md:h-[350px] flex items-stretch overflow-hidden my-12 rounded-lg shadow"
+    >
+      <!-- Imagen de fondo -->
+      <img
+        src="./dist/assets/promo-patient.jpg"
+        alt="Promo Patient"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <!-- Overlay degradado en color principal -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#129990]/80 via-[#129990]/90 to-[#129990]/95"
+      ></div>
+      <!-- Contenido -->
+      <div class="relative z-10 flex flex-col md:flex-row w-full h-full">
+        <div class="flex-1"></div>
+        <div
+          class="flex-1 flex flex-col justify-center px-8 md:px-16 text-white"
+        >
+          <div>
+            <p class="text-lg font-semibold mb-1">We Love to See You Smile</p>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+              $100 OFF on All Dental<br />Service*
+            </h2>
+            <button
+              class="mt-1 px-7 py-3 border border-white rounded text-lg hover:bg-white hover:text-[#129990] font-semibold transition"
+            >
+              Book An Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Happy Stories-->
+    <section class="py-24 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-3 gap-8">
+          <!-- Celda 1,1: decorativo -->
+          <div class="flex flex-col justify-start">
+            <h2
+              class="text-4xl font-extrabold mb-4 text-neutral-900 font-serif"
+            >
+              Happy Stories
+            </h2>
+            <p class="text-lg font-semibold text-neutral-800 mb-8">
+              Creating Vibrant Smiles for Healthy Lifestyles!
+            </p>
+            <div class="mt-4">
+              <svg width="200" height="180" class="opacity-20">
+                <defs>
+                  <pattern
+                    id="dots-rev"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="#129990" />
+                  </pattern>
+                </defs>
+                <rect width="200" height="180" fill="url(#dots-rev)" />
+              </svg>
+            </div>
+          </div>
+          <!-- Celda 1,2 -->
+          <div>
+            <div class="bg-white shadow-xl rounded-xl p-8 flex flex-col h-full">
+              <!-- SVG y contenido -->
+              <svg
+                class="w-8 h-8 text-[#129990] mb-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-6-8H7a2 2 0 00-2 2v6a2 2 0 002 2h2"
+                />
+              </svg>
+              <p class="italic text-neutral-700 mb-6">
+                Voluptatum aspernatur ullamcorper hymenaeos...
+              </p>
+              <div class="flex items-center gap-3 mt-auto">
+                <img
+                  src="./dist/assets/avatar1.jpg"
+                  alt="Dorothy Palmer"
+                  class="w-10 h-10 rounded-full object-cover border-2 border-[#129990]"
+                />
+                <span class="font-bold text-neutral-800">Dorothy Palmer</span>
+              </div>
+            </div>
+          </div>
+          <!-- Celda 1,3 -->
+          <div>
+            <div class="bg-white shadow-xl rounded-xl p-8 flex flex-col h-full">
+              <svg
+                class="w-8 h-8 text-[#129990] mb-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-6-8H7a2 2 0 00-2 2v6a2 2 0 002 2h2"
+                />
+              </svg>
+              <p class="italic text-neutral-700 mb-6">
+                Voluptatum aspernatur ullamcorper hymenaeos...
+              </p>
+              <div class="flex items-center gap-3 mt-auto">
+                <img
+                  src="./dist/assets/avatar2.jpg"
+                  alt="Randy Tran"
+                  class="w-10 h-10 rounded-full object-cover border-2 border-[#129990]"
+                />
+                <span class="font-bold text-neutral-800">Randy Tran</span>
+              </div>
+            </div>
+          </div>
+          <!-- Fila 2, columna 1: testimonio -->
+          <div>
+            <div class="bg-white shadow-xl rounded-xl p-8 flex flex-col h-full">
+              <svg
+                class="w-8 h-8 text-[#129990] mb-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-6-8H7a2 2 0 00-2 2v6a2 2 0 002 2h2"
+                />
+              </svg>
+              <p class="italic text-neutral-700 mb-6">
+                Voluptatum aspernatur ullamcorper hymenaeos...
+              </p>
+              <div class="flex items-center gap-3 mt-auto">
+                <img
+                  src="./dist/assets/avatar3.jpg"
+                  alt="Amy Turner"
+                  class="w-10 h-10 rounded-full object-cover border-2 border-[#129990]"
+                />
+                <span class="font-bold text-neutral-800">Amy Turner</span>
+              </div>
+            </div>
+          </div>
+          <!-- Fila 2, columna 2: testimonio -->
+          <div>
+            <div class="bg-white shadow-xl rounded-xl p-8 flex flex-col h-full">
+              <svg
+                class="w-8 h-8 text-[#129990] mb-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-6-8H7a2 2 0 00-2 2v6a2 2 0 002 2h2"
+                />
+              </svg>
+              <p class="italic text-neutral-700 mb-6">
+                Voluptatum aspernatur ullamcorper hymenaeos...
+              </p>
+              <div class="flex items-center gap-3 mt-auto">
+                <img
+                  src="./dist/assets/avatar4.jpg"
+                  alt="Joe Alan"
+                  class="w-10 h-10 rounded-full object-cover border-2 border-[#129990]"
+                />
+                <span class="font-bold text-neutral-800">Joe Alan</span>
+              </div>
+            </div>
+          </div>
+          <!-- Fila 2, columna 3: testimonio -->
+          <div>
+            <div class="bg-white shadow-xl rounded-xl p-8 flex flex-col h-full">
+              <svg
+                class="w-8 h-8 text-[#129990] mb-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-6-8H7a2 2 0 00-2 2v6a2 2 0 002 2h2"
+                />
+              </svg>
+              <p class="italic text-neutral-700 mb-6">
+                Voluptatum aspernatur ullamcorper hymenaeos...
+              </p>
+              <div class="flex items-center gap-3 mt-auto">
+                <img
+                  src="./dist/assets/avatar5.jpg"
+                  alt="Endang Everdeen"
+                  class="w-10 h-10 rounded-full object-cover border-2 border-[#129990]"
+                />
+                <span class="font-bold text-neutral-800">Endang Everdeen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: How to Find Us-->
+    <!-- Curva superior decorativa -->
+    <div class="relative bg-[#f1f9f4] pt-32 -mt-24">
+      <div
+        class="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10"
+      >
+        <svg
+          class="relative block w-full h-[160px] md:h-[220px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 220"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#fff"
+            d="M0,0 C480,220 960,220 1440,0 L1440,220 L0,220 Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Título y botón -->
+      <div class="text-center mb-10 relative z-20">
+        <h2 class="text-4xl font-extrabold mb-2 text-neutral-900 font-serif">
+          How to Find Us
+        </h2>
+        <p class="text-lg font-medium mb-4">
+          Fill up the Form and Ask Your Queries
+        </p>
+        <a
+          href="https://maps.google.com"
+          target="_blank"
+          class="btn btn-primary px-6"
+        >
+          <svg
+            class="inline-block w-5 h-5 mr-2 -mt-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M21 21l-6-6m0 0A7 7 0 1 0 3 10a7 7 0 0 0 12 5z" />
+          </svg>
+          View On Google Map
+        </a>
+      </div>
+
+      <!-- Contenedor de la card principal -->
+      <div
+        class="max-w-4xl mx-auto rounded-xl shadow-lg bg-white overflow-hidden relative z-20"
+      >
+        <!-- Contacto superior -->
+        <div
+          class="flex flex-col md:flex-row items-center bg-[#20a592] p-8 gap-8 md:gap-0 md:justify-between"
+        >
+          <!-- Address -->
+          <div class="flex items-center w-full md:w-1/3 mb-4 md:mb-0">
+            <div class="bg-[#fff]/10 rounded-full p-4 mr-4">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                />
+              </svg>
+            </div>
+            <div class="text-white">
+              <div class="font-semibold text-lg">Address</div>
+              <div class="text-sm">
+                177 E Houston St<br />New York, NY 10002
+              </div>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div
+            class="flex items-center w-full md:w-1/3 mb-4 md:mb-0 justify-center"
+          >
+            <div class="bg-[#fff]/10 rounded-full p-4 mr-4">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92V19a2 2 0 0 1-2.18 2A19.73 19.73 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72 13.45 13.45 0 0 0 .57 2.64 2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.13 6.13l.27-.27a2 2 0 0 1 2.11-.45 13.45 13.45 0 0 0 2.64.57A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </div>
+            <div class="text-white">
+              <div class="font-semibold text-lg">Phone</div>
+              <div class="text-sm">+(888) 695-9859<br />+(888) 569-9859</div>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="flex items-center w-full md:w-1/3 justify-end">
+            <div class="bg-[#fff]/10 rounded-full p-4 mr-4">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 4h16v16H4z" stroke="none" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+            </div>
+            <div class="text-white">
+              <div class="font-semibold text-lg">Email</div>
+              <div class="text-sm">info@example.com<br />hello@example.com</div>
+            </div>
+          </div>
+        </div>
+        <!-- Formulario y Mapa -->
+        <div class="flex flex-col md:flex-row">
+          <!-- Formulario -->
+          <div class="w-full md:w-1/2 p-8">
+            <h3 class="text-xl font-bold mb-6">Book Your Appointment</h3>
+            <form>
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="input input-bordered w-full mb-4"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="input input-bordered w-full mb-4"
+              />
+              <input
+                type="text"
+                placeholder="Your Phone Number"
+                class="input input-bordered w-full mb-4"
+              />
+              <textarea
+                placeholder="Message"
+                rows="5"
+                class="textarea textarea-bordered w-full mb-4"
+              ></textarea>
+              <button type="submit" class="btn btn-primary px-6">
+                Send Request
+              </button>
+            </form>
+          </div>
+          <!-- Mapa simulado (iframe de Google Maps o imagen estática) -->
+          <div class="w-full md:w-1/2 h-96 p-8 pt-10 md:pt-8 flex items-center">
+            <div class="w-full h-full rounded-lg overflow-hidden shadow-md">
+              <!-- Aquí puedes poner un iframe de Google Maps real más adelante -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.340259663624!2d-73.98761788459438!3d40.7217174452879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259886bf72f85%3A0xc80b8f06e177fe62!2s177%20E%20Houston%20St%2C%20New%20York%2C%20NY%2010002!5e0!3m2!1sen!2sus!4v1686268570349!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---->
+    <footer class="bg-[#129990] text-white pt-8">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-between pb-6 border-b border-white/10">
+          <!-- LOGO y disclaimer -->
+          <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="/dist/assets/logo.png" alt="Companioni Dental Smile" class="h-8 w-8 mr-2" />
+              <span class="font-bold text-2xl tracking-wide">Dental Clinic</span>
+            </div>
+            <p class="text-white/70 text-sm text-center md:text-left max-w-xs">
+              <strong>Disclaimer:</strong> The information on this website is for general informational purposes only and is not a substitute for professional dental advice, diagnosis, or treatment. Always consult a licensed dentist for your individual needs. 
+            </p>
+          </div>
+          <!-- SOCIAL ICONS SVG -->
+          <div class="flex gap-6 text-2xl mt-4 md:mt-0">
+            <!-- Facebook -->
+            <a href="#" aria-label="Facebook" class="hover:opacity-80 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.1 5.66 21.19 10.44 21.95v-6.24H7.89v-2.47h2.55v-1.89c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.62.76-1.62 1.54v1.78h2.77l-.44 2.47h-2.33v6.24C18.34 21.19 22 17.1 22 12.07z"/></svg>
+            </a>
+            <!-- Twitter -->
+            <a href="#" aria-label="Twitter" class="hover:opacity-80 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.59.59-2.46.7a4.18 4.18 0 0 0 1.84-2.3 8.32 8.32 0 0 1-2.64 1.01A4.14 4.14 0 0 0 16.12 4c-2.28 0-4.13 1.85-4.13 4.13 0 .32.04.63.1.93A11.72 11.72 0 0 1 3.15 5.15a4.13 4.13 0 0 0-.56 2.08c0 1.44.73 2.7 1.83 3.44a4.12 4.12 0 0 1-1.87-.52v.05c0 2.02 1.44 3.7 3.36 4.08-.35.09-.73.14-1.12.14-.27 0-.53-.03-.78-.07.54 1.68 2.08 2.9 3.92 2.94A8.34 8.34 0 0 1 2 19.54a11.76 11.76 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.69 0-.18 0-.36-.01-.54.8-.58 1.5-1.31 2.05-2.14z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" aria-label="Instagram" class="hover:opacity-80 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 2C5.13 4 4 5.13 4 7.75v8.5C4 18.87 5.13 20 7.75 20h8.5C18.87 20 20 18.87 20 16.25v-8.5C20 5.13 18.87 4 16.25 4h-8.5zm4.25 2.75a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 2a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5zm5.25.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z"/></svg>
+            </a>
+            <!-- Google -->
+            <a href="#" aria-label="Google" class="hover:opacity-80 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.16v2.98h5.56c-.23 1.23-1.36 3.6-5.56 3.6-3.35 0-6.08-2.76-6.08-6.15s2.73-6.15 6.08-6.15c1.91 0 3.19.76 3.92 1.42l2.67-2.59C16.23 2.8 14.39 2 12.2 2 6.48 2 2 6.48 2 12s4.48 10 10.2 10c5.89 0 9.78-4.14 9.78-9.98 0-.67-.08-1.19-.18-1.67z"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- COPYRIGHT Y WEB DEV -->
+        <div class="py-4 text-center text-white/80 text-sm flex flex-col md:flex-row md:justify-between items-center gap-2">
+          <span>Copyright © 2025 Companioni Dental Smile. All rights reserved.</span>
+          <span>
+            Website by 
+            <a href="https://ggplus.com" target="_blank" rel="noopener noreferrer" class="underline ml-1 hover:text-white transition">
+              GGPlus.com
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.hero-section {
+    clip-path: ellipse(100% 85% at 50% 15%);
+  }
+  
